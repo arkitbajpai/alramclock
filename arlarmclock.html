@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="alram.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script src="https://kit.fontawesome.com/6f260fee7a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<div class="wrapper">
+      <div class="display">00:00:00</div>
+      <div class="container">
+        <div class="inputs">
+          <input
+            type="number"
+            id="hourInput"
+            placeholder="00"
+            min="0"
+            max="23"
+          />
+          <input
+            type="number"
+            id="minuteInput"
+            placeholder="00"
+            min="0"
+            max="59"
+          />
+        </div>
+        <button id="set">Add Alarm</button>
+        <div class="activeAlarms"></div>
+      </div>
+    </div>
+    <script src="alarm.js"></script>
+</body>
+</html>
